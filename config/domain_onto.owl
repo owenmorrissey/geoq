@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://nga.ic.gov/observations/"
+     xml:base="http://nga.ic.gov/observations/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://nga.ic.gov/observations/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://nga.ic.gov/observations/built_by -->
+
+    <owl:ObjectProperty rdf:about="http://nga.ic.gov/observations/built_by">
+        <rdfs:subPropertyOf rdf:resource="http://nga.ic.gov/observations/transfered"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nga.ic.gov/observations/sold_to -->
+
+    <owl:ObjectProperty rdf:about="http://nga.ic.gov/observations/sold_to">
+        <rdfs:subPropertyOf rdf:resource="http://nga.ic.gov/observations/transfered"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nga.ic.gov/observations/transfered -->
+
+    <owl:ObjectProperty rdf:about="http://nga.ic.gov/observations/transfered">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nga.ic.gov/observations/used_by -->
+
+    <owl:ObjectProperty rdf:about="http://nga.ic.gov/observations/used_by">
+        <rdfs:subPropertyOf rdf:resource="http://nga.ic.gov/observations/transfered"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://nga.ic.gov/observations/classification -->
+
+    <owl:DatatypeProperty rdf:about="http://nga.ic.gov/observations/classification">
+        <rdfs:label>Classification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nga.ic.gov/observations/confidence -->
+
+    <owl:DatatypeProperty rdf:about="http://nga.ic.gov/observations/confidence">
+        <rdfs:label>Confidence</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nga.ic.gov/observations/dateOfObservation -->
+
+    <owl:DatatypeProperty rdf:about="http://nga.ic.gov/observations/dateOfObservation">
+        <rdfs:label>Date of Observation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nga.ic.gov/observations/source_id -->
+
+    <owl:DatatypeProperty rdf:about="http://nga.ic.gov/observations/source_id">
+        <rdfs:label>Source ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/APC -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/APC">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Armored_Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/observations/Military_Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Air_Vehicle -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Air_Vehicle">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Vehicle"/>
+        <rdfs:label>Air Vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Armored_Vehicle -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Armored_Vehicle">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Ground_Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Artifact -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Artifact">
+        <rdfs:comment>Any man-made material object</rdfs:comment>
+        <rdfs:label>Artifact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Boat -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Boat">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Water_Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Candid -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Candid">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Cargo_Aircraft"/>
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/observations/Military_Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/observations/RussianBuilt"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Car -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Car">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Ground_Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Cargo_Aircraft -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Cargo_Aircraft">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Fixed_Wing_Aircraft"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Cruiser -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Cruiser">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Ship"/>
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/observations/Military_Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Destroyer -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Destroyer">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Ship"/>
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/observations/Military_Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Fixed_Wing_Aircraft -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Fixed_Wing_Aircraft">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Air_Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Ground_Vehicle -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Ground_Vehicle">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Vehicle"/>
+        <rdfs:label>Ground Vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/IFV -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/IFV">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Armored_Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/observations/Military_Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Pickup_Truck -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Pickup_Truck">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Truck"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Radar_Truck -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Radar_Truck">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Truck"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Rotary_Wing_Aircraft -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Rotary_Wing_Aircraft">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Air_Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Ship -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Ship">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Water_Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Tank -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Tank">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Armored_Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/observations/Military_Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/observations/Tracked_Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Truck -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Truck">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Ground_Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Tugboat -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Tugboat">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Boat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Vehicle -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Vehicle">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/artifactOntology/Water_Vehicle -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/artifactOntology/Water_Vehicle">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Vehicle"/>
+        <rdfs:label>Water Vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/observations/BMD-2 -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/observations/BMD-2">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/IFV"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/observations/BMP-1 -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/observations/BMP-1">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/IFV"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/observations/BMP-2 -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/observations/BMP-2">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/IFV"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/observations/BMP-3 -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/observations/BMP-3">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/IFV"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/observations/Country -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/observations/Country"/>
+    
+
+
+    <!-- http://nga.ic.gov/observations/Military_Vehicle -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/observations/Military_Vehicle">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/observations/Observation -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/observations/Observation">
+        <rdfs:label>Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/observations/RussianBuilt -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/observations/RussianBuilt">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nga.ic.gov/observations/built_by"/>
+                <owl:hasValue rdf:resource="http://nga.ic.gov/observations/Russia"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/observations/T72 -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/observations/T72">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Tank"/>
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/observations/RussianBuilt"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/observations/T72B3 -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/observations/T72B3">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/observations/T72"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nga.ic.gov/observations/Tracked_Vehicle -->
+
+    <owl:Class rdf:about="http://nga.ic.gov/observations/Tracked_Vehicle">
+        <rdfs:subClassOf rdf:resource="http://nga.ic.gov/artifactOntology/Ground_Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://nga.ic.gov/observations/China -->
+
+    <owl:NamedIndividual rdf:about="http://nga.ic.gov/observations/China">
+        <rdf:type rdf:resource="http://nga.ic.gov/observations/Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://nga.ic.gov/observations/Iran -->
+
+    <owl:NamedIndividual rdf:about="http://nga.ic.gov/observations/Iran">
+        <rdf:type rdf:resource="http://nga.ic.gov/observations/Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://nga.ic.gov/observations/Russia -->
+
+    <owl:NamedIndividual rdf:about="http://nga.ic.gov/observations/Russia">
+        <rdf:type rdf:resource="http://nga.ic.gov/observations/Country"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

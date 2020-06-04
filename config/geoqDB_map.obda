@@ -1,0 +1,9 @@
+[PrefixDeclaration]
+obs:		http://nga.ic.gov/observation/
+
+[MappingDeclaration] @collection [[
+mappingId	Observed Thing Mapping
+target	obs:thing_{obs_id} a <{obs_type}> .
+source	select maps_feature.id as obs_id, maps_featuretype.name as obs_type from maps_feature inner join maps_featuretype on maps_feature.template_id = maps_featuretype.id
+
+]]
