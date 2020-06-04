@@ -507,6 +507,7 @@ class FeatureType(models.Model):
         if self.icon:
             icon = "/images/"+str(self.icon)
         return clean_dumps(dict(id=self.id,
+                               ontology_reference=self.ontology_reference,
                                properties=self.properties,
                                category=self.category,
                                order=self.order,
